@@ -17,13 +17,16 @@ public interface IExpressionAggregator<T>
 // accumulator by defualt is "And"
 var list = new List<Expression<Func<Person, bool>>>();
 
+// add expressions
 list.Add(x => x.Age > 10);
 list.Add(x => x.DateOfBirth > DateTime.MinValue);
 
-// Act
+// create sample size
 var people = _fixture.CreateMany<Person>();
+
+// aggregate expressions into one large expression and compile expression to Func
 var func =_aggregator.AggregateAndCompile(list);
 
-// Assert
-Assert.Equal(people.Count(), people.Where(func).Count());
+// use the Func is Linq Where clause
+var filteredPeople = people.Where(func).Count());
 ```
