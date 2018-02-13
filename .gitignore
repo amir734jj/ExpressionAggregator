@@ -7,3 +7,10 @@ Sqlite.ORM.Tests/obj
 
 .vs
 .idea
+ExpressionAggregator\.Tests/bin/
+
+ExpressionAggregator/bin/
+
+ExpressionAggregator/obj/
+
+ExpressionAggregator\.Tests/obj/
