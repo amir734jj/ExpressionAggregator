@@ -25,7 +25,6 @@ namespace ExpressionAggregator
         /// <param name="exp"></param>
         public void AddIfNotNull(Expression<Func<T, bool>> exp)
         {
-            var amir = exp.Body is BinaryExpression biwnaryExpression;
             // convert expression to binary expression
             if (_removeNullOperands && exp.Body is BinaryExpression binaryExpression && (IsNullExpression(binaryExpression.Left) || IsNullExpression(binaryExpression.Right)))
             {
