@@ -35,7 +35,7 @@ var filteredPeople = people.Where(func).Count());
 This utility comes with `ExpressionList` class that is optional to use but it implements `IList` and overrides `Add` method and 
 prevents adding expressions to the list if expression has constant value of `null`.
 
-```
+```csharp
 var list = new ExpressionList<Person>();
 
 // this will be added successfully to the list
