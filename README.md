@@ -1,6 +1,8 @@
-# ExpressionAggregator
+# Expression Aggregator
 Linq Expression aggregation, given list of Expressions it creates aggregated expression or Func. This is useful if
 you conditionally added expressions to a list of expressions and want to aggregated them all together into one expression or Func.
+
+[Nuget Link](https://www.nuget.org/packages/ExpressionAggregator)
 
 #### Interface:
 ```csharp
@@ -28,7 +30,7 @@ var people = _fixture.CreateMany<Person>();
 var func =_aggregator.AggregateAndCompile(list);
 
 // use the Func is Linq Where clause
-var filteredPeople = people.Where(func).Count());
+var filteredPeople = people.Where(func).ToList());
 ```
 
 ### Extras:
