@@ -30,7 +30,7 @@ var people = _fixture.CreateMany<Person>();
 var func =_aggregator.AggregateAndCompile(list);
 
 // use the Func is Linq Where clause
-var filteredPeople = people.Where(func).Count());
+var filteredPeople = people.Where(func).ToList());
 ```
 
 ### Extras:
