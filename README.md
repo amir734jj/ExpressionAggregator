@@ -13,7 +13,7 @@ public interface IExpressionAggregator<T>
 ```
 
 ### Sample code:
-```
+```csharp
 // accumulator by defualt is "And"
 var list = new List<Expression<Func<Person, bool>>>();
 
