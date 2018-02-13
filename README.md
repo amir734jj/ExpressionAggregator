@@ -4,12 +4,12 @@ you conditionally added expressions to a list of expressions and want to aggrega
 
 #### Interface:
 ```csharp
-    public interface IExpressionAggregator<T>
-    {
-        Func<T, bool> AggregateAndCompile(IEnumerable<Expression<Func<T, bool>>> list);
-        
-        Expression<Func<T, bool>> Aggregate(IEnumerable<Expression<Func<T, bool>>> list);
-    }
+public interface IExpressionAggregator<T>
+{
+    Func<T, bool> AggregateAndCompile(IEnumerable<Expression<Func<T, bool>>> list);
+    
+    Expression<Func<T, bool>> Aggregate(IEnumerable<Expression<Func<T, bool>>> list);
+}
 ```
 
 ### Sample code:
