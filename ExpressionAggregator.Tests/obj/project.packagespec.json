@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\workspace\\ExpressionAggregator\\ExpressionAggregator.Tests\\ExpressionAggregator.Tests.csproj",
+    "projectName": "ExpressionAggregator.Tests",
+    "projectPath": "C:\\workspace\\ExpressionAggregator\\ExpressionAggregator.Tests\\ExpressionAggregator.Tests.csproj",
+    "outputPath": "C:\\workspace\\ExpressionAggregator\\ExpressionAggregator.Tests\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {
+          "C:\\workspace\\ExpressionAggregator\\ExpressionAggregator\\ExpressionAggregator.csproj": {
+            "projectPath": "C:\\workspace\\ExpressionAggregator\\ExpressionAggregator\\ExpressionAggregator.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "AutoFixture": {
+          "target": "Package",
+          "version": "[4.0.1, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.5.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.3.1, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.3.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
