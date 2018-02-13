@@ -30,3 +30,17 @@ var func =_aggregator.AggregateAndCompile(list);
 // use the Func is Linq Where clause
 var filteredPeople = people.Where(func).Count());
 ```
+
+### Extras:
+This utility comes with `ExpressionList` class that is optional to use but it implements `IList` and overrides `Add` method and 
+prevents adding expressions to the list if expression has constant value of `null`.
+
+```
+var list = new ExpressionList<Person>();
+
+// this will be added successfully to the list
+list.AddIfNotNull(x => x.FirstName == "Test firstname");
+
+// this will not be added to the list
+list.AddIfNotNull(x => x.NullableDateOfBirth == null);
+```
