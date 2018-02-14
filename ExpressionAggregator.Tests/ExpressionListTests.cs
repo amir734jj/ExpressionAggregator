@@ -32,7 +32,7 @@ namespace ExpressionAggregator.Tests
         }
         
         [Fact]
-        public void Test__AddNullNullableNestedField()
+        public void Test__AddNullNullableNestedFieldInt()
         {
             // Arrange
             var list = new ExpressionList<Person>();
@@ -40,6 +40,34 @@ namespace ExpressionAggregator.Tests
             
             // Act
             list.AddIfNotNull(x => x.Parents.NullableAge == value);
+            
+            // Assert
+            Assert.Equal(0, list.Count);
+        }
+        
+        [Fact]
+        public void Test__AddNullNullableNestedFieldString()
+        {
+            // Arrange
+            var list = new ExpressionList<Person>();
+            string value = null;
+            
+            // Act
+            list.AddIfNotNull(x => x.Parents.NullableString == value);
+            
+            // Assert
+            Assert.Equal(0, list.Count);
+        }
+        
+        [Fact]
+        public void Test__AddNullNullableNestedFieldDateTime()
+        {
+            // Arrange
+            var list = new ExpressionList<Person>();
+            DateTime? value = null;
+            
+            // Act
+            list.AddIfNotNull(x => x.Parents.NullableDateTime == value);
             
             // Assert
             Assert.Equal(0, list.Count);

@@ -8,6 +8,8 @@ namespace ExpressionAggregator.Tests
         public bool Status { get; set; }
         public int Age { get; set; }
         public int? NullableAge { get; set; }
+        public string NullableString { get; set; }
+        public DateTime? NullableDateTime { get; set; }
     }
     
     public class Person
