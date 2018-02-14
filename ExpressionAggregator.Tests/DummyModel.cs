@@ -7,6 +7,7 @@ namespace ExpressionAggregator.Tests
         public string FatherName { get; set; }
         public bool Status { get; set; }
         public int Age { get; set; }
+        public int? NullableAge { get; set; }
     }
     
     public class Person

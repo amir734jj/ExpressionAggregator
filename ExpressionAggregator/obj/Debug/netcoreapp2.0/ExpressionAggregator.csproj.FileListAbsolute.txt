@@ -1,8 +1,0 @@
-C:\workspace\ExpressionAggregator\ExpressionAggregator\bin\Debug\netcoreapp2.0\ExpressionAggregator.deps.json
-C:\workspace\ExpressionAggregator\ExpressionAggregator\bin\Debug\netcoreapp2.0\ExpressionAggregator.dll
-C:\workspace\ExpressionAggregator\ExpressionAggregator\bin\Debug\netcoreapp2.0\ExpressionAggregator.pdb
-C:\workspace\ExpressionAggregator\ExpressionAggregator\obj\Debug\netcoreapp2.0\ExpressionAggregator.csproj.CoreCompileInputs.cache
-C:\workspace\ExpressionAggregator\ExpressionAggregator\obj\Debug\netcoreapp2.0\ExpressionAggregator.AssemblyInfoInputs.cache
-C:\workspace\ExpressionAggregator\ExpressionAggregator\obj\Debug\netcoreapp2.0\ExpressionAggregator.AssemblyInfo.cs
-C:\workspace\ExpressionAggregator\ExpressionAggregator\obj\Debug\netcoreapp2.0\ExpressionAggregator.dll
-C:\workspace\ExpressionAggregator\ExpressionAggregator\obj\Debug\netcoreapp2.0\ExpressionAggregator.pdb
