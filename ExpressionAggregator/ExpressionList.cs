@@ -77,7 +77,7 @@ namespace ExpressionAggregator
 
         public void Add(Expression<Func<T, bool>> item)
         {
-            _list.Add(item);
+            AddIfNotNull(item);
         }
 
         public void Clear()
